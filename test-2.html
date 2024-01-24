@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Computer Science MCQs</title>
+  <link rel="stylesheet" href="styleshit.css">
+</head>
+<body>
+  <h2>Computer Science MCQs</h2>
+
+  <div id="timerContainer"></div>
+
+  <form id="quizForm" action="/submit" method="post">
+    <!-- Questions -->
+    <div class="question" id="questionContainer">
+      <div class="question-item">
+        <p><span class="question-number">1.</span> What does HTML stand for?</p>
+        <label><input type="radio" name="q1" value="1"> Hyper Text Markup Language</label>
+        <label><input type="radio" name="q1" value="2"> Hyperlinks and Text Markup Language</label>
+        <label><input type="radio" name="q1" value="3"> Home Tool Markup Language</label>
+        <label><input type="radio" name="q1" value="4"> Hyper Transfer Markup Language</label>
+      </div>
+
+      <div class="question-item">
+        <p><span class="question-number">2.</span> What is the capital of France?</p>
+        <label><input type="radio" name="q2" value="1"> Berlin</label>
+        <label><input type="radio" name="q2" value="2"> Madrid</label>
+        <label><input type="radio" name="q2" value="3"> Paris</label>
+        <label><input type="radio" name="q2" value="4"> Rome</label>
+      </div>
+
+      <div class="question-item">
+        <p><span class="question-number">3.</span> In programming, what does CSS stand for?</p>
+        <label><input type="radio" name="q3" value="1"> Counter Strike: Source</label>
+        <label><input type="radio" name="q3" value="2"> Corrective Style Sheet</label>
+        <label><input type="radio" name="q3" value="3"> Computer Style Sheet</label>
+        <label><input type="radio" name="q3" value="4"> Cascading Style Sheet</label>
+      </div>
+
+      <div class="question-item">
+        <p><span class="question-number">4.</span> What does the acronym "CPU" stand for?</p>
+        <label><input type="radio" name="q4" value="1"> Central Process Unit</label>
+        <label><input type="radio" name="q4" value="2"> Computer Personal Unit</label>
+        <label><input type="radio" name="q4" value="3"> Central Processor Unit</label>
+        <label><input type="radio" name="q4" value="4"> Central Peripheral Unit</label>
+      </div>
+
+      <div class="question-item">
+        <p><span class="question-number">5.</span> What programming language is known for its simplicity and readability?</p>
+        <label><input type="radio" name="q5" value="1"> Java</label>
+        <label><input type="radio" name="q5" value="2"> Python</label>
+        <label><input type="radio" name="q5" value="3"> C++</label>
+        <label><input type="radio" name="q5" value="4"> Ruby</label>
+      </div>
+
+      <button type="button" onclick="showConfirmation()">Submit Answers</button>
+    </div>
+  </form>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <p>Are you sure you want to submit your answers?</p>
+      <div class="popup-buttons">
+        <button onclick="confirmSubmission()">Confirm</button>
+        <button onclick="goBack()" class="go-button">Go Back</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="javashit.js"></script>
+</body>
+</html>

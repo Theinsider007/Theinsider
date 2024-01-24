@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.question {
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.question p {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.question-item {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: calc(75% - 20px);
+  border: 2px solid #aab3b2;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.question-content {
+  padding: 15px;
+  height: 100%;
+}
+
+.question-number {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  position: absolute;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+#myModal {
+  display: none;
+}
+
+.modal-content {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.go-button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  margin-right: 250px;
+}
+
+.popup-buttons button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .question {
+    flex-direction: column;
+  }
+
+  .question-item {
+    width: 100%;
+  }
+}
+
+#timerContainer {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  padding: 10px;
+  background-color: #f5440e;
+  color: white;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: bold;
+}
